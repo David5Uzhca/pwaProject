@@ -26,7 +26,8 @@ import { FIREBASE_APP_NAME, FIREBASE_OPTIONS } from '@angular/fire/compat';
     AppRoutingModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(enviroment.firebaseConfig)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    provideFirebaseApp(() => initializeApp({"projectId":"pwa-db-559b5","appId":"1:1050737518802:web:1e1e3a307badcb90d2a50b","storageBucket":"pwa-db-559b5.appspot.com","apiKey":"AIzaSyBcqgKDd6GfPrrSH6ID3A_AWE6SXnSw0yI","authDomain":"pwa-db-559b5.firebaseapp.com","messagingSenderId":"1050737518802"}))
   ],
 
   providers: [
